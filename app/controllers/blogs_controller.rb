@@ -1,5 +1,6 @@
 class BlogsController < ApplicationController
   def index
+    @blogs = "asitahaharekana"
   end
 
   def new
