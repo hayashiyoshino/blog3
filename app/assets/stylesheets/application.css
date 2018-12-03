@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+.btnn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff8a80;
+    height: 50px;
+    width: 80px;
+    margin:;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+}

@@ -1,12 +1,14 @@
 class BlogsController < ApplicationController
   def index
-    @blogs = "asitahaharekana"
+    @blogs = Blog.all
   end
 
   def new
+    @blog = Blog.new
   end
 
   def create
+    Blog.create(blog_params)
   end
 
   def edit
@@ -21,6 +23,7 @@ class BlogsController < ApplicationController
 private
 
 def blog_params
+  params.require(:blog).permit(:title, :text)
 end
 
 end
