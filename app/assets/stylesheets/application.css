@@ -33,16 +33,3 @@ body {
     background-image: url("IMG_2454.jpg");
 }
 
-nav {
-    color: #fff;
-    background-color: #afa84c;
-    width: 100%;
-    height: 56px;
-    line-height: 56px;
-}
-
-.page-footer {
-    padding-top: 20px;
-    color: #fff;
-    background-color: #afa84c;
-}
