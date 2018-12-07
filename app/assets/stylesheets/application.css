@@ -18,8 +18,10 @@
     text-decoration: none;
     color: #fff;
     background-color: #afa84c;
-    height: 50px;
-    width: 80px;
+    font-size: 25px;
+    font-color: #fff;
+    height: 40px;
+    width: 90px;
     margin:;
     text-align: center;
     letter-spacing: .5px;
@@ -31,10 +33,11 @@
 body {
     margin: 0;
     background-image: url("IMG_2454.jpg");
+    background-size: cover;
 }
 
 .bg-mask {
-      height: 100%;
+      height: 100vh;
       min-height: 600px;
-      background: rgba(255,255,255,0.8);
+      background: rgba(255,255,255,0.9);
     }
