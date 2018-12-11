@@ -23,10 +23,13 @@
       <div class="container">
       <a href="/" class="brand-logo">BLOG3</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <% if user_signed_in? %>
         <li><a href="/blogs/new">ブログを書く</a></li>
         <li><a href="/users/sign_out" data-method="delete">ログアウト</a></li>
+        <% else %>
         <li><a href="/users/sign_up">新規登録</a></li>
         <li><a href="/users/sign_in">ログイン</a></li>
+        <% end %>
       </ul>
     </div>
     </div>
