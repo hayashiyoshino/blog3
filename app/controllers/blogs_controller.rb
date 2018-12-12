@@ -1,6 +1,6 @@
 class BlogsController < ApplicationController
   def index
-    @blogs = Blog.all
+    @blogs = Blog.all.order('created_at DESC')
   end
 
   def new
@@ -34,7 +34,7 @@ class BlogsController < ApplicationController
 private
 
 def blog_params
-  params.require(:blog).permit(:title, :text)
+  params.require(:blog).permit(:title, :text).merge(user_id: current_user.id)
 end
 
 end
